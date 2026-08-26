@@ -106,7 +106,8 @@
       "tag": "🌐 Internet",
       "outbounds": [
         "🚀 Latency",
-        "⚙️ UDP"
+        "⚙️ UDP",
+        "CF-Worker-ProxyIP"
       ],
       "default": "🚀 Latency"
     },
@@ -273,6 +274,26 @@
         "headers": {
           "Host": "sg.iptunnel.eu.org"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "CF-Worker-ProxyIP",
+      "server": "vmess-proxy.singabedales5433.workers.dev",
+      "server_port": 443,
+      "uuid": "ebe7b811-fbfb-42dc-9204-93e12642e5cf",
+      "security": "none",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/147.139.189.225-443"
       }
     }
   ],
